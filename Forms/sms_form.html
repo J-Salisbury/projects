@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+    </style>
+    <style>
+        * {font-family: 'Nunito Sans', Arial, sans-serif;}
+        a {color: #2C75D7;}
+        header {width: 100%; max-width: 300px; min-width: 200px; padding-bottom: 30px; margin: 0 auto;}
+        header img {width: 100%;}
+        form {margin: 0 auto; max-width: 500px;}
+        label {margin-bottom: 5px;}
+        input {width: 100%; margin: 5px 0 10px;}
+        input[type="submit"] {background-color: #2C75D7; color: #FFFFFF; padding: 15px; margin: 20px 0 0; border: none; border-radius: 40px;}
+        .info {font-size: .875em; font-style: italic; color: #495257; margin-top: -5px;}
+    </style>
+</head>
+<body>
+    <header><img src="/contentlibrary/logos/pf-dark-logo-large.png"></header>
+    <form>
+        <label for="FIRST_NAME">First Name:</label><br>
+        <input type="text" id="FIRST_NAME"><br>
+        <label for="LAST_NAME">Last Name:</label><br>
+        <input type="text" id="LAST_NAME"><br>
+        <!--Legacy student number is 8 characters. Reach student number is 10 characters long.-->
+        <label for="STUDENT_NUMBER">Student Number:</label><br>
+        <input type="text" id="STUDENT_NUMBER" min="8" max="10" required><br>
+        <p class="info">Your student number can be found in the top right corner of <a href="https://my.pennfoster.com/login/" target="_blank">your student portal</a>.</p>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
